@@ -1,0 +1,10 @@
+
+<div style="text-align:center">
+  <button [routerLink]="['/dashboard']" class="btn btn-info">Dashboard</button>
+  <button [routerLink]="['/postPage']" class="btn btn-info">Post Page</button>
+  <button [routerLink]="['/postPage/:id']" class="btn btn-info">Post Comment</button>
+  <h1><i>Welcome to Login Page!</i></h1>
+  <br>
+Username:<input type="text" #inputValue><br>
+<br><button (click)="validate(inputValue.value)" class="btn btn-primary">Get Data</button>
+</div>  

@@ -1,0 +1,10 @@
+<div style="text-align:center">
+    <br>
+  <h2><i>Users</i></h2><br>
+    <button [routerLink]="['/dashboard']" class="btn btn-warning" >Back</button>
+    <br><br>
+  <ul *ngFor="let u of data">
+    <li>{{u.name}}</li> 
+    <button (click)="onView(u)" class="btn btn-info btn-sm">View</button>
+  </ul>
+</div>

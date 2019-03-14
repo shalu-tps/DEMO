@@ -1,0 +1,18 @@
+<div style="text-align:center">
+    <br>
+  <h1><i>Posts</i></h1><br>
+    <button [routerLink]="['/users']" class="btn btn-success">Back</button><br>
+    <ul *ngFor="let ps of userSer.postData"><br>
+     <li> <b>USERId ::</b>{{ps.userId}}</li>
+     <li><b>Id ::</b>{{ps.id}}</li>
+     <li> <b>Title ::</b>{{ps.title}}</li>
+     <li><b>Body ::</b>{{ps.body}}</li>
+    </ul>
+    <!-- <div *ngIf="userSer.postData"><br>
+      <b>USERId ::</b>{{userSer.postData.userId}}
+      <b>Id ::</b>{{userSer.postData.id}}
+      <b>Title ::</b>{{userSer.postData.title}}
+      <b>Body ::</b>{{userSer.postData.body}}
+    </div> -->
+
+  </div> 

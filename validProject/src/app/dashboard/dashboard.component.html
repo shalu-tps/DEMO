@@ -1,0 +1,13 @@
+
+<div style="text-align:center">
+    <br><br>
+<h1><i>Dashboard Page</i></h1>
+   <b>Username :</b>{{dt?.username}}<br>
+   <b>Id :</b>{{dt?.id}}<br>
+   <b>Email :</b>{{dt?.email}}
+    <br>
+    <br>
+<button [routerLink]="['/postPage']" class="btn btn-info">Posts</button>    
+<button (click)="logout()" class="btn btn-primary">Logout</button>
+<button [routerLink]="['/users']" class="btn btn-info">View Users</button>
+</div>

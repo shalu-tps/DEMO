@@ -1,0 +1,26 @@
+<div style="text-align:center">
+  <br>
+<h1><i>Posts</i></h1><br>
+  <button [routerLink]="['/dashboard']" class="btn btn-primary">Dashboard</button>
+  <button [routerLink]="['/addPost']" class="btn btn-success">Add Post</button>
+
+  
+    <!-- <div *ngIf="postD">
+      <h4><u><b>Posts of id :</b>{{uId}}</u></h4>
+      <h6><b>Id :</b>{{uId}}</h6>
+     <h6><b>Body :</b>{{postD.body}}</h6>
+     <h6><b>Title :</b>{{postD.title}}</h6>
+    </div>  
+    <button (click)="onSelect(ps)" class="btn btn-info">View Comments</button> -->
+
+
+<ul *ngFor="let ps of userSer.postData; let i = index"><br>
+   <li>Userid :{{ps.userId}}</li>
+   <li>Id :{{ps.id}}</li>
+   <li>Title :{{ps.title}}</li>
+   <li>Body :{{ps.body}}</li> 
+   <button (click)="onSelect(ps)" class="btn btn-info">View Comments</button>
+   <button type="submit" (click)="onRemove(ps, i)" class="btn btn-primary">Remove</button>
+  </ul>
+  <br><button [routerLink]="['/addPost']" class="btn btn-success">Add Post</button>
+</div>

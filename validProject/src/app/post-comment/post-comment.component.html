@@ -1,0 +1,18 @@
+<div style="text-align:center">
+  <br>
+<h2><i>COMMENTS</i></h2><br>
+  <button [routerLink]="['/postPage']" class="btn btn-warning" >Posts</button>
+  <br><br>
+ <div *ngIf="postD">
+  <h4><u><b>Posts of id :</b>({{uId}})</u></h4>
+  <h6><b>Id :</b>{{uId}}</h6>
+ <h6><b>Body :</b>{{postD.body}}</h6>
+ <h6><b>Title :</b>{{postD.title}}</h6>
+</div>  
+<h3><b>Comments</b></h3>
+<ul *ngFor="let dts of cmnt">
+ <li>{{dts.id}}</li>
+ <li>{{dts.body}}</li>
+ <li>{{dts.name}}</li>
+</ul>
+</div>

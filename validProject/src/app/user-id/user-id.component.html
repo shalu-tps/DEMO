@@ -1,0 +1,11 @@
+<div style="text-align:center">
+    <br><br>
+<h1><i>Users Details</i></h1>
+   <b>Name :</b>{{dt?.name}}<br>
+   <b>Username :</b>{{dt?.username}}<br>
+   <b>Id :</b>{{dt?.id}}<br>
+   <b>Email :</b>{{dt?.email}}
+    <br> 
+    <br>
+<button [routerLink]="['/users']" class="btn btn-info">Back</button>   
+<button (click)="viewPost(dt)" class="btn btn-success">Posts</button>  
